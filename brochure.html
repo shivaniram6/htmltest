@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brochure Design</title>
+
+  <!-- Bootstrap and CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Raleway;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    .column img {
+      margin-top: 12px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<!-- responsive image grid with animations on scroll displaying work-->
+
+<body>
+  <div class="container-fluid">
+    <div class="header" id="myHeader">
+      <h1>Brochure Design - Mistero , An Imagined City</h1>
+      <!-- display more info on click of the button -->
+      <p id="demo" style="display:none ; font-family: Raleway; font-size: 20px; text-align: center;"> Mistero - the
+        domed city you can't escape. This is a travel brochure designed based on a city that has multiple gruelling
+        layers as domes to go through, to finally reach it's heart.</p>
+      <button onclick="document.getElementById('demo').style.display='block'">More About The Project</button>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="../PORTFOLIO/SGFBrochure_07.png" style="width:100%;" data-aos="flip-right" data-aos-duration="1500">
+        <img src="../PORTFOLIO/SGFBrochure_05.png" style="width:100%;" data-aos="flip-right" data-aos-duration="1500">
+      </div>
+      <div class="column">
+        <img src="../PORTFOLIO/SGFBrochure_03.png" style="width:100%;" data-aos="flip-left" data-aos-duration="1500">
+        <img src="../PORTFOLIO/SGFBrochure_04.png" style="width:100%;" data-aos="flip-left" data-aos-duration="1500">
+      </div>
+      <div class="column">
+        <img src="../PORTFOLIO/SGFBrochure_06.png" style="width:100%;" data-aos="flip-right" data-aos-duration="1500">
+      </div>
+      <div class="column">
+        <img src="../PORTFOLIO/SGFBrochure_02.png" style="width:100%;" data-aos="flip-left" data-aos-duration="1500">
+      </div>
+
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
